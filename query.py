@@ -76,12 +76,6 @@ def get_brands_summary():
     brand_info = db.session.query(Model.name, Model.brand_name).all()
 
 
-    def get_by_color(cls, color):
-          """Get all cats matching that color."""
-
-          return cls.query.filter_by(color=color).all()
-
-
 # -------------------------------------------------------------------
 
 
