@@ -65,7 +65,7 @@ def get_model_info(year):
 
     model_year = db.session.query(Model.name, Model.brand_name, Brand.headquarters).one()
 
-    print Model
+    print "<Model name=%s brand_name=%s headquarters=%s>" % (year.name, year.brand_name, year.headquarters)
 
 def get_brands_summary():
     '''Prints out each brand name, and each model name for that brand
